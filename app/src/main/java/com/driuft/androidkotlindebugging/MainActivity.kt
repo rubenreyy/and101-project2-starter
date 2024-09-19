@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        challengeOneButton.setOnClickListener { launchHelloWorldActivity() }
+         challengeOneButton.setOnClickListener { launchHelloWorldActivity() }
         challengeTwoButton.setOnClickListener { launchNumSumActivity() }
         challengeThreeButton.setOnClickListener { launchCurrentDayActivity() }
         challengeFourButton.setOnClickListener { launchRandomColorActivity() }
@@ -30,7 +30,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun launchHelloWorldActivity() {
-        val i = Intent(404 as Context, HelloWorldActivity::class.java)
+        // val i = Intent(404 as Context, HelloWorldActivity::class.java)
+        val i = Intent(this, HelloWorldActivity::class.java)
         startActivity(i)
     }
 
